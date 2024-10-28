@@ -1,0 +1,309 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // Tambahan animasi atau fitur interaktif bisa ditambahkan di sini.
+    // Misal menambahkan smooth scroll atau animasi lainnya.
+});
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+header ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.hero {
+    background-image: url('img/hero-bg.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    color: black;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ff6f61;
+	
+    color: #fff;
+    padding: 10px 20px;
+	margin-top: 50px; 
+	margin-bottom: 50px;
+    text-decoration: none;
+    border-radius: 80px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff3b2f;
+}
+
+.about, .products, .contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.products .product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.products .product {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.products .product:hover {
+    transform: scale(1.05);
+}
+
+.products img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form input, .contact form textarea {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #ff3b2f;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.profil .profil-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+	
+.profil .profil {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.profil .profil:hover {
+    transform: scale(1.05);
+}
+
+.profil img {
+    max-width: 100%;
+    height: auto;
+}
+
+.center-text {
+    text-align: center;
+    margin-top: 20px;
+}
+.about {
+    padding: 50px 20px; 
+    text-align: center; 
+    background-color: #f9f9f9; 
+}
+
+.about h1 {
+    margin-bottom: 40px; 
+    font-size: 2em;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ff3b2f;
+}
+
+	
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ThriftShop | Penjualan Baju Thrifting</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ThriftShop.id</div>
+            <ul>
+                <li> <a href="#home">Home</a></li>
+                <li> <a href="#products">Produk</a></li>
+                <li> <a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+			<img src="C:\Users\muham\Downloads\img_wa-removebg-preview.png" alt="Logo DZ STORE" width="400" height="400">
+            <h1>Selamat Datang di ThriftShop.id</h1>
+			<h2>Tentang Kami</h2>
+        <p>ThriftShop.id adalah toko online yang menawarkan baju-baju thrift berkualitas dengan harga terjangkau. Kami percaya pada mode yang berkelanjutan dan membantu masyarakat menemukan gaya mereka dengan hemat.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+       <h1>Mau outfit elite tapi hemat duit?</h1>
+		<a href="#products" class="btn">Belanja Sekarang</a>
+   </section>
+   
+    <section id="products" class="products">
+        <h2>Produk Kami</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="C:\Users\muham\OneDrive\Dokumen\TUGAS CODING\image\baju vintage.jpg"" alt="Baju Thrifting 1">
+                <h3>Baju Vintage</h3>
+                <p>Rp 50.000</p>
+            </div>
+            <div class="product">
+                <img src="C:\Users\muham\OneDrive\Dokumen\TUGAS CODING\image\jaket denim.jpg"" alt="Baju Thrifting 2">
+                <h3>Jaket Denim</h3>
+                <p>Rp 75.000</p>
+            </div>
+            <div class="product">
+                <img src="C:\Users\muham\OneDrive\Dokumen\TUGAS CODING\image\jaket flanel.jpg"" alt="Baju Thrifting 3">
+                <h3>Kemeja Flanel</h3>
+                <p>Rp 60.000</p>
+            </div>
+        </div>
+    </section>
+	
+		<section id="profil" class="profil">
+			<h2 class="center-text">Creatived by Team</h2>
+			<div class="profil-list">
+			<div class="profil"> 
+				<img src="C:\Users\muham\Downloads\imgmeetiw-removebg-preview.png" alt="profil" width="350" height="350">
+				<h3>Dzikri maulana</h3>
+			</div>
+				<div class="profil"> 
+				<img src="C:\Users\muham\Downloads\Gambar_WhatsApp_2024-10-25_pukul_12.20.12_1a031723-removebg-preview.png" alt="profil" width="350" height="350"> 
+				<h3>Muhammad Dary Fadlur</h3>
+			</div>
+		</section>
+
+    <section id="contact" class="contact">
+        <h2>Kontak Kami</h2>
+        <form action="">
+            <input type="text" placeholder="Nama Anda" required>
+            <input type="email" placeholder="Email Anda" required>
+            <textarea placeholder="Pesan Anda" required></textarea>
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <footer> 
+        <p>&copy; 2024 ThriftShop.id All rights reserved.</p>
+		<p>Imagine all the people living life in peace</p>
+    </footer>
+	
+</body>
+</html>
